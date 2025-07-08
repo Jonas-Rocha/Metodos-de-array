@@ -114,3 +114,29 @@ const ages1 = [15, 30, 39, 29];
 
 const result3 = ages.some((age) => age < 18);
 console.log(result3);
+
+/*
+O método reduce() é utilizado para reduzir um array a um único
+valor.
+
+Parâmetros:
+- Array original (values)
+- Acumulador (accumulator)
+- Valor da iteração (currentValue)
+- Valor Inicial (0)
+- Index (index da iteração atual - opcional)
+*/
+
+const values2 = [1, 2, 3, 4, 5];
+
+const sum = values2.reduce((accumulator, currentValue, index) => {
+  console.log("ACUMULADOR", accumulator);
+  console.log("CURRENT VALUE", currentValue);
+  console.log("INDEX", index);
+
+  console.log("SOMA", accumulator + currentValue);
+  console.log("###########");
+  return accumulator + currentValue; // precisamos obrigatoriamente do return, pois é o return que coloca o valor no accumulator.
+}, 10); // aqui era 0 para testar
+
+console.log("RESULTADO DA SOMA FINAL:", sum); // se eu colocar trocar o valor inicial de 0 para 10, ele acrescenta 10 no resultado final.
