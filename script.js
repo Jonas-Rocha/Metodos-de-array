@@ -49,3 +49,23 @@ e retornar com um novo array filtrado.
 */
 
 console.log(promotion);
+
+/*
+O método findIndex() retorna o indice no array do primeiro elemento
+que satisfizer a condição. Caso contrário, retorna -1, indicando
+que nunhum elemento passou no teste.
+*/
+
+const values = [4, 6, 8, 12];
+
+//Obtendo a posição do index e o elemento que o valor é maior do que 4.
+//console.log(values.findIndex((value) => value > 4));
+
+//EXEMPLO 2:
+
+const index = values.findIndex((value) => value > 4);
+console.log(index);
+console.log(values[index]);
+
+// Exemplo de quando não encontra.
+console.log(values.findIndex((value) => value > 12));
