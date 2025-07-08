@@ -69,3 +69,25 @@ console.log(values[index]);
 
 // Exemplo de quando não encontra.
 console.log(values.findIndex((value) => value > 12));
+
+/*
+O método find() retorna o valor do primeiro elemento array que satisfazer
+a condição. Caso contrário, undefined é retornado.
+*/
+
+const values1 = [5, 12, 8, 130, 44];
+
+// Retorna o primeiro elemento que valor é maior que 10
+const found = values1.find((value) => value > 10);
+console.log(found);
+
+// Exemplo com objetos.
+const fruits = [
+  { name: "apples", quantity: 2 },
+  { name: "bananas", quantity: 25 },
+  { name: "laranja", quantity: 64 },
+];
+
+const result1 = fruits.find((fruit) => fruit.name === "bananas");
+
+console.log(result1);
