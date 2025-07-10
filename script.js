@@ -140,3 +140,4 @@ const sum = values2.reduce((accumulator, currentValue, index) => {
 }, 10); // aqui era 0 para testar
 
 console.log("RESULTADO DA SOMA FINAL:", sum); // se eu colocar trocar o valor inicial de 0 para 10, ele acrescenta 10 no resultado final.
+//
